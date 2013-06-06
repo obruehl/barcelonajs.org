@@ -1,0 +1,40 @@
+<div class="next">
+		<div class="sponsor-l">
+			<a href="http://www.xing.com"><img src="/images/086be0f5.xing.jpg" alt="XING"></a>
+		</div>
+		<div class="calendar">
+			<div class="day">{{bcnjs.date | date:'d'}}</div>
+			<div class="month">{{bcnjs.date | date:'MMMM'}}</div>
+		</div>
+		<div class="sponsor-r">
+			<a href="http://www.estrelladamm.com"><img src="/images/35e57042.estrella.png" alt="estrella"></a>
+		</div>
+	<div class="next-sub">7.45pm.<br>C/ Bailen 11<br>Barcelona</div>
+</div>
+
+<section class="talks clearfix">
+	<article class="talk" ng-repeat="talk in bcnjs.talks">
+	  <hgroup>
+	    <h3>{{talk.title}}</h3>
+	    <h5>
+	      <a href="https://twitter.com/{{talk.presenter.username}}">{{talk.presenter.displayname}} (@{{talk.presenter.username}})</a>
+	    </h5>
+	  </hgroup>
+	  <p>
+	    <markdown strip="true" ng-model="talk.description"></markdown>
+	  </p>
+	</article>
+</section>
+
+<div class="meta clearfix">
+  <div class="metabox"><h4>beer.js</h4>At the Gran Foc, C/ Roger de Llúria, 23. After the meetup</div>
+  <div class="metabox"><h4>more.js</h4>
+  	<a href="https://twitter.com/bcnjs" id="twitter" class="social"><span>@bcnjs</span></a>
+  	<a href="https://plus.google.com/communities/115705669406517039298" id="google" class="social"><span>Google+</span></a>
+  	<a href="/BarcelonaJS.ics" id="calendar" class="social"><span>Calendar</span></a>
+  </div>
+  <div class="metabox"><h4>collaborate.js</h4>
+  	<a href="http://barcelona.io" id="barcelonaio" class="collaborator"><span>BarcelonaIO</span></a>
+  	<a href="http://www.mob-barcelona.com" id="mob" class="collaborator"><span>MOB</span></a>
+  </div>
+</div>
