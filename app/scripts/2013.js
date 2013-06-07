@@ -18,15 +18,15 @@ var bcnjs_events = [
 		date: [2013, 5, 6],
 		talks: [
 			{
-				title: 'Building a static web page with Grunt  ...',
+				title: 'Introduction to GruntJS',
 				presenter: {
 					username: 'drpicox',
 					displayname: 'Dr. David Rodenas'
 				},
-				description: '**... and bower, bootstrap, coffeescript, markdown, angujarJS, less.** Grunt is the *Makefile* for JS projects. In this talk I present what is Grunt, which is its philosophy, and a small example how to use it. And the best of it, how to build and optimize everything with a simple command.',
+				description: '**Optimize a web page with a single command.** Grunt is the *Makefile* for JS projects. In this talk I present what is Grunt, which is its philosophy, and a small example how to use it. And the best of it, how to build and optimize everything with a simple command.',
 				resources: {
-					github: '',
-					slides: ''
+					github: 'http://drpicox.github.io/gruntjs-presentation-introduction/#/grunt',
+					slides: 'https://github.com/drpicox/gruntjs-presentation-introduction'
 				}
 			},
 			{
