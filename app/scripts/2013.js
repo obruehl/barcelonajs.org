@@ -23,7 +23,11 @@ var bcnjs_events = [
 					username: 'drpicox',
 					displayname: 'Dr. David Rodenas'
 				},
-				description: '**... and bower, bootstrap, coffeescript, markdown, angujarJS, less.** Grunt is the *Makefile* for JS projects. In this talk I present what is Grunt, which is its philosophy, and a small example how to use it. And the best of it, how to build and optimize everything with a simple command.'
+				description: '**... and bower, bootstrap, coffeescript, markdown, angujarJS, less.** Grunt is the *Makefile* for JS projects. In this talk I present what is Grunt, which is its philosophy, and a small example how to use it. And the best of it, how to build and optimize everything with a simple command.',
+				resources: {
+					github: '',
+					slides: ''
+				}
 			},
 			{
 				title: 'Try a little tenderness',
@@ -31,7 +35,11 @@ var bcnjs_events = [
 					username: 'masylum',
 					displayname: 'Pau Ramon'
 				},
-				description: '**Stop writing ugly Javascript, you don\'t have to.** This talk is about enforcing good practices for building and maintaining big Javascript applications. I\'m going to share what we learned while building Teambox (more than 200k lines of javascript code)'
+				description: '**Stop writing ugly Javascript, you don\'t have to.** This talk is about enforcing good practices for building and maintaining big Javascript applications. I\'m going to share what we learned while building Teambox (more than 200k lines of javascript code)',
+				resources: {
+					github: '',
+					slides: ''
+				}
 			},
 			{
 				title: 'GPU Deep Dive',
@@ -39,7 +47,11 @@ var bcnjs_events = [
 					username: 'xbeumala',
 					displayname: 'Xavi Beumala'
 				},
-				description: '**with a dose of browser internals understanding** Let\'s talk about rendering performance, how to boost pages speed and make 60+ FPS animations possible. Clunky and janky scrolls? Jumpy animatios? Unresponsive UIs? Let’s see how to identify, diagnose and fix reflows, composites, repaints, textures and automatic layer creation even for low end devices without die trying.'
+				description: '**with a dose of browser internals understanding** Let\'s talk about rendering performance, how to boost pages speed and make 60+ FPS animations possible. Clunky and janky scrolls? Jumpy animatios? Unresponsive UIs? Let’s see how to identify, diagnose and fix reflows, composites, repaints, textures and automatic layer creation even for low end devices without die trying.',
+				resources: {
+					github: '',
+					slides: ''
+				}
 			}
 		],
 	},
