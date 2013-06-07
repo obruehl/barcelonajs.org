@@ -1,0 +1,334 @@
+@import 'normalize';
+@import 'globals';
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font: {
+      family: $base-font-family;
+      size: $base-font-size;
+    }
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.header-container {
+    height: 150px;
+    width: 150px;
+    background-color: $dark;
+    margin-bottom: 50px;
+}
+
+#title {
+    margin: 0;
+}
+
+#logo {
+    display: block;
+    height: 150px;
+    width: 150px;
+    background: url('/images/logo.png') no-repeat;
+}
+#logo span {
+    display: none;
+}
+
+a {
+  color: $highlight;
+}
+
+.talk {
+  float: left;
+  width: 290px;
+  padding: 10px 10px 20px 10px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  border: 2px solid $dark;
+  background: url('/images/franja.png') repeat-x center bottom;
+}
+
+.empty {
+  background: url('/images/franjabw.png') no-repeat center bottom; 
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.next {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.next-sub {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.meta {
+  width: 320px;
+}
+
+.calendar {
+  font-weight: 700;
+  width: 150px;
+  height: 150px;
+  border: 2px solid $dark;
+  background: url('/images/franja.png') no-repeat center bottom;
+  margin: 0 auto;
+}
+
+.sponsor-r {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.sponsor-l {
+  width: 150px;
+  margin: 10px auto;
+}
+
+.day {
+  font-size: 72px;
+  line-height: 76px;
+  width: 150px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.month {
+  width: 150px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.footer-container {
+  border: 2px solid $dark;
+}
+
+.metabox {
+  float: left;
+  width: 320px;
+  align: center;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.talks {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#twitter {
+  background: url('/images/twitter.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+#twitter span {
+  display: none;
+}
+
+#google {
+  background: url('/images/gplus.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+#google span {
+  display: none;
+}
+
+#barcelonaio {
+  background: url('/images/barcelonaio.png') no-repeat;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+#barcelonaio span {
+  display: none;
+}
+
+#mob {
+  background: url('/images/mob.png') no-repeat;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+#mob span {
+  display: none;
+}
+
+#calendar {
+  background: url('/images/calendar.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+#calendar span {
+  display: none;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-container {
+  background-color: $dark;
+  color: $light;
+  padding-top: 25px;
+}
+
+.footerbox {
+  float: left;
+  width: 300px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  .sponsor-r {
+    margin: 25px 0 0 25px;
+    float: left;
+  }
+
+  .sponsor-l {
+    margin: 25px 0 0 0;
+    float: left;
+  }
+
+  .calendar {
+    float: left;
+  }
+
+  .wrapper {
+    width: 480px;
+  }
+
+  .footerbox, .metabox {
+    width: 480px;
+    margin: 15px 0;
+  }
+
+  .next {
+    width: 460px;
+  }
+
+  .meta {
+    width: 480px;
+  }
+
+  .talk {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+
+  .footerbox, .metabox {
+    width: 250px;
+    margin: 50px 0;
+  }
+
+  .next {
+    width: 460px;
+  }
+
+  .meta {
+    width: 7680px;
+  }
+
+  .talk {
+    width: 210px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  .talk {
+    width: 250px;
+    margin: 10px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .talks {
+    width: 960px;
+  }
+
+  .next {
+    width: 460px;
+  }
+
+  .meta {
+    width: 960px;
+    margin: 10px;
+  }
+
+  .footerbox, .metabox {
+    width: 250px;
+    margin: 10px;
+    padding: 20px 20px 40px 20px;
+  }
+}
