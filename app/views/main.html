@@ -23,6 +23,11 @@
 	  <p>
 	    <markdown strip="true" ng-model="talk.description"></markdown>
 	  </p>
+          <p>
+            <span ng-repeat="(resource,url) in talk.resources">
+               <a ng-show="url" href="{{url}}" target="_blank">{{resource}}</a> 
+            </span>
+          </p>
 	</article>
 </section>
 
