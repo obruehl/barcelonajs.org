@@ -56,7 +56,21 @@ var bcnjs_events = [
 		],
 	},
 	{
-		date: [2013, 6, 4]
+		date: [2013, 6, 4],
+		talks: [
+			{
+				title: 'Offline storage and PouchDB',
+				presenter: {
+					username: 'toniher',
+					displayname: 'Toni Hermoso Pulido'
+				},
+				description: '**There is life after connection** First part of the talk summarizes some current offlline storage options for web developers. Second part introduces and provides some examples of PouchDB, a convenient Javascript library for both offline (local) and online (remote) storage based on CouchDB API.',
+				resources: {
+					github: '',
+					slides: ''
+				}
+			}
+		]
 	},
 	{
 		date: [2013, 7, 1]
