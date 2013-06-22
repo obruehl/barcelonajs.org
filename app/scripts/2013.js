@@ -53,11 +53,23 @@ var bcnjs_events = [
 					slides: ''
 				}
 			}
-		],
+		]
 	},
-	{
-		date: [2013, 6, 4]
-	},
+        {
+	    date: [2013, 6, 4],
+	    talks: [
+		{
+		    title: 'Javascript Promises',
+		    presenter: {
+			username: 'drpicox',
+			displayname: 'Dr. David Rodenas'
+		    },
+		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises put order to them: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+		    resources: {
+		    }
+		}
+	    ]
+        },
 	{
 		date: [2013, 7, 1]
 	},
