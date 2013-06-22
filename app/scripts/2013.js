@@ -59,7 +59,7 @@ var bcnjs_events = [
 	    date: [2013, 6, 4],
 	    talks: [
 		{
-		    title: 'Javascript Promises',
+		    title: 'Promises for Javascript',
 		    presenter: {
 			username: 'drpicox',
 			displayname: 'Dr. David Rodenas'
