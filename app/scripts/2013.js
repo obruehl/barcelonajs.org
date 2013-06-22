@@ -66,6 +66,8 @@ var bcnjs_events = [
 		    },
 		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises put order to them: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
 		    resources: {
+			github: "",
+			slides: ""
 		    }
 		}
 	    ]
