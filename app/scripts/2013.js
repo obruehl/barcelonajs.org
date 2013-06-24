@@ -69,7 +69,19 @@ var bcnjs_events = [
 					github: '',
 					slides: ''
 				}
-			}
+			},
+			{
+				title: 'Motion Detection In Video Through JavaScript',
+				presenter: {
+				  username: 'demoive',
+					displayname: 'Paulo Ávila'
+				},
+				description: '**Making use of HTML5 video, Webcam API and Canvas**. This interactive talk explores the possibilities of motion and even movement detection of a live video stream within the browser. Find out about accessing pixel-by-pixel information from individual video frames, different RGB (and alpha) channels, and contribute ideas for potential applications and improvements.',
+				resources: {
+					github: '',
+					slides: ''
+				}
+      }
 		]
 	},
 	{

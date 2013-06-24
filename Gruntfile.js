@@ -1,38 +1,50 @@
 'use strict';
-var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
+var LIVERELOAD_PORT = 35729;
+var lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT });
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
+
+// # Globbing
+// for performance reasons we're only matching one level down:
+// 'test/spec/{,*/}*.js'
+// use this if you want to recursively match all subfolders:
+// 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // configurable paths
-  var barcelonajsConfig = {
+  var barcelonaJS = {
     app: 'app',
     dist: 'dist'
   };
 
   try {
-    barcelonajsConfig.app = require('./component.json').appPath || barcelonajsConfig.app;
+    barcelonaJS.app = require('./bower.json').appPath || barcelonaJS.app;
   } catch (e) {}
 
   grunt.initConfig({
-    barcelonajs: barcelonajsConfig,
+    bcnjs: barcelonaJS,
     watch: {
+      options: {
+        nospawn: true
+      },
       compass: {
-        files: ['<%= barcelonajs.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass']
+        files: ['<%= bcnjs.app %>/styles/{,*/}*.{scss,sass}'],
+        tasks: ['compass:server']
       },
       livereload: {
+        options: {
+          livereload: LIVERELOAD_PORT
+        },
         files: [
-          '<%= barcelonajs.app %>/{,*/}*.html',
-          '{.tmp,<%= barcelonajs.app %>}/styles/{,*/}*.css',
-          '{.tmp,<%= barcelonajs.app %>}/scripts/{,*/}*.js',
-          '<%= barcelonajs.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ],
-        tasks: ['livereload']
+          '<%= bcnjs.app %>/{,*/}*.html',
+          '{.tmp,<%= bcnjs.app %>}/styles/{,*/}*.css',
+          '{.tmp,<%= bcnjs.app %>}/scripts/{,*/}*.js',
+          '<%= bcnjs.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+        ]
       }
     },
     connect: {
@@ -47,7 +59,7 @@ module.exports = function (grunt) {
             return [
               lrSnippet,
               mountFolder(connect, '.tmp'),
-              mountFolder(connect, barcelonajsConfig.app)
+              mountFolder(connect, barcelonaJS.app)
             ];
           }
         }
@@ -58,6 +70,15 @@ module.exports = function (grunt) {
             return [
               mountFolder(connect, '.tmp'),
               mountFolder(connect, 'test')
+            ];
+          }
+        }
+      },
+      dist: {
+        options: {
+          middleware: function (connect) {
+            return [
+              mountFolder(connect, barcelonaJS.dist)
             ];
           }
         }
@@ -74,8 +95,8 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= barcelonajs.dist %>/*',
-            '!<%= barcelonajs.dist %>/.git*'
+            '<%= bcnjs.dist %>/*',
+            '!<%= bcnjs.dist %>/.git*'
           ]
         }]
       },
@@ -87,24 +108,21 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        '<%= barcelonajs.app %>/scripts/{,*/}*.js'
+        '<%= bcnjs.app %>/scripts/{,*/}*.js'
       ]
-    },
-    karma: {
-      unit: {
-        configFile: 'karma.conf.js',
-        singleRun: true
-      }
     },
     compass: {
       options: {
-        sassDir: '<%= barcelonajs.app %>/styles',
+        sassDir: '<%= bcnjs.app %>/styles',
         cssDir: '.tmp/styles',
-        imagesDir: '<%= barcelonajs.app %>/images',
-        javascriptsDir: '<%= barcelonajs.app %>/scripts',
-        fontsDir: '<%= barcelonajs.app %>/styles/fonts',
-        importPath: '<%= barcelonajs.app %>/components',
-        relativeAssets: true
+        generatedImagesDir: '.tmp/images/generated',
+        imagesDir: '<%= bcnjs.app %>/images',
+        javascriptsDir: '<%= bcnjs.app %>/scripts',
+        fontsDir: '<%= bcnjs.app %>/styles/fonts',
+        importPath: '<%= bcnjs.app %>/components',
+        httpImagesPath: '/images',
+        httpGeneratedImagesPath: '/images/generated',
+        relativeAssets: false
       },
       dist: {},
       server: {
@@ -113,75 +131,64 @@ module.exports = function (grunt) {
         }
       }
     },
-    sass: {                              // Task
-      dist: {                            // Target
-        files: {                         // Dictionary of files
-          'main.css': 'main.scss',       // 'destination': 'source'
-          'widgets.css': 'widgets.scss'
-        }
-      },
-      dev: {                             // Another target
-        options: {                       // Target options
-          style: 'expanded'
-        },
-        files: {
-          'main.css': 'main.scss',
-          'widgets.css': [
-            'button.scss',
-            'tab.scss',
-            'debug.scss'  // Maybe you need one extra file in dev
-          ]
-        }
-      }
-    },
-    concat: {
+    // not used since Uglify task does concat,
+    // but still available if needed
+    /*concat: {
+      dist: {}
+    },*/
+    rev: {
       dist: {
         files: {
-          '<%= barcelonajs.dist %>/scripts/scripts.js': [
-            '.tmp/scripts/{,*/}*.js',
-            '<%= barcelonajs.app %>/scripts/{,*/}*.js'
+          src: [
+            '<%= bcnjs.dist %>/scripts/{,*/}*.js',
+            '<%= bcnjs.dist %>/styles/{,*/}*.css',
+            '<%= bcnjs.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+            '<%= bcnjs.dist %>/styles/fonts/*'
           ]
         }
       }
     },
     useminPrepare: {
-      html: '<%= barcelonajs.app %>/index.html',
+      html: '<%= bcnjs.app %>/index.html',
       options: {
-        dest: '<%= barcelonajs.dist %>'
+        dest: '<%= bcnjs.dist %>'
       }
     },
     usemin: {
-      html: ['<%= barcelonajs.dist %>/{,*/}*.html'],
-      css: ['<%= barcelonajs.dist %>/styles/{,*/}*.css'],
+      html: ['<%= bcnjs.dist %>/{,*/}*.html'],
+      css: ['<%= bcnjs.dist %>/styles/{,*/}*.css'],
       options: {
-        dirs: ['<%= barcelonajs.dist %>']
+        dirs: ['<%= bcnjs.dist %>']
       }
     },
     imagemin: {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= barcelonajs.app %>/images',
+          cwd: '<%= bcnjs.app %>/images',
           src: '{,*/}*.{png,jpg,jpeg}',
-          dest: '<%= barcelonajs.dist %>/images'
+          dest: '<%= bcnjs.dist %>/images'
         }]
       }
     },
     cssmin: {
-      dist: {
-        files: {
-          '<%= barcelonajs.dist %>/styles/main.css': [
-            '.tmp/styles/{,*/}*.css',
-            '<%= barcelonajs.app %>/styles/{,*/}*.css'
-          ]
-        }
-      }
+      // By default, your `index.html` <!-- Usemin Block --> will take care of
+      // minification. This option is pre-configured if you do not wish to use
+      // Usemin blocks.
+      // dist: {
+      //   files: {
+      //     '<%= bcnjs.dist %>/styles/main.css': [
+      //       '.tmp/styles/{,*/}*.css',
+      //       '<%= bcnjs.app %>/styles/{,*/}*.css'
+      //     ]
+      //   }
+      // }
     },
     htmlmin: {
       dist: {
         options: {
           /*removeCommentsFromCDATA: true,
-          // https://github.com/barcelonajs/grunt-usemin/issues/44
+          // https://github.com/bcnjs/grunt-usemin/issues/44
           //collapseWhitespace: true,
           collapseBooleanAttributes: true,
           removeAttributeQuotes: true,
@@ -192,103 +199,122 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= barcelonajs.app %>',
+          cwd: '<%= bcnjs.app %>',
           src: ['*.html', 'views/*.html'],
-          dest: '<%= barcelonajs.dist %>'
+          dest: '<%= bcnjs.dist %>'
         }]
+      }
+    },
+    // Put files not handled in other tasks here
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= bcnjs.app %>',
+          dest: '<%= bcnjs.dist %>',
+          src: [
+            '*.{ico,png,txt}',
+            '.htaccess',
+            'bower_components/**/*',
+            'images/{,*/}*.{gif,webp}',
+            'styles/fonts/*',
+            'CNAME',
+            'BarcelonaJS.ics'
+          ]
+        }, {
+          expand: true,
+          cwd: '.tmp/images',
+          dest: '<%= bcnjs.dist %>/images',
+          src: [
+            'generated/*'
+          ]
+        }]
+      }
+    },
+    concurrent: {
+      server: [
+        'compass:server'
+      ],
+      test: [
+        'compass'
+      ],
+      dist: [
+        'compass:dist',
+        'imagemin',
+        'htmlmin'
+      ]
+    },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        singleRun: true
       }
     },
     cdnify: {
       dist: {
-        html: ['<%= barcelonajs.dist %>/*.html']
+        html: ['<%= bcnjs.dist %>/*.html']
       }
     },
     ngmin: {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= barcelonajs.dist %>/scripts',
+          cwd: '<%= bcnjs.dist %>/scripts',
           src: '*.js',
-          dest: '<%= barcelonajs.dist %>/scripts'
+          dest: '<%= bcnjs.dist %>/scripts'
         }]
       }
     },
     uglify: {
       dist: {
         files: {
-          '<%= barcelonajs.dist %>/scripts/scripts.js': [
-            '<%= barcelonajs.dist %>/scripts/scripts.js'
+          '<%= bcnjs.dist %>/scripts/scripts.js': [
+            '<%= bcnjs.dist %>/scripts/scripts.js'
           ]
         }
-      }
-    },
-    rev: {
-      dist: {
-        files: {
-          src: [
-            '<%= barcelonajs.dist %>/scripts/{,*/}*.js',
-            '<%= barcelonajs.dist %>/styles/{,*/}*.css',
-            '<%= barcelonajs.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= barcelonajs.dist %>/styles/fonts/*'
-          ]
-        }
-      }
-    },
-    copy: {
-      dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= barcelonajs.app %>',
-          dest: '<%= barcelonajs.dist %>',
-          src: [
-            '*.{ico,txt}',
-            '.htaccess',
-            'components/**/*',
-            'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
-          ]
-        }]
       }
     }
   });
 
-  grunt.renameTask('regarde', 'watch');
+  grunt.registerTask('server', function (target) {
+    if (target === 'dist') {
+      return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
+    }
 
-  grunt.registerTask('server', [
-    'clean:server',
-    'compass:server',
-    'livereload-start',
-    'connect:livereload',
-    'open',
-    'watch'
-  ]);
+    grunt.task.run([
+      'clean:server',
+      'concurrent:server',
+      'connect:livereload',
+      'open',
+      'watch'
+    ]);
+  });
 
   grunt.registerTask('test', [
     'clean:server',
-    'compass',
+    'concurrent:test',
     'connect:test',
     'karma'
   ]);
 
   grunt.registerTask('build', [
     'clean:dist',
-    //'jshint',
-    //'test',
-    'compass:dist',
-    'sass',
-    //'useminPrepare',
-    //'imagemin',
-    'cssmin',
-    'htmlmin',
+    'useminPrepare',
+    'concurrent:dist',
     'concat',
     'copy',
     'cdnify',
     'ngmin',
+    'cssmin',
     'uglify',
-    //'rev',
+    'rev',
     'usemin'
   ]);
 
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', [
+    'jshint',
+    'test',
+    'build'
+  ]);
 };
