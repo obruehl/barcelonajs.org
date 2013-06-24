@@ -53,24 +53,48 @@ var bcnjs_events = [
 					slides: ''
 				}
 			}
-		]
+		],
 	},
-        {
-	    date: [2013, 6, 4],
-	    talks: [
-		{
-		    title: 'Promises for Javascript',
-		    presenter: {
-			username: 'drpicox',
-			displayname: 'Dr. David Rodenas'
-		    },
-		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises put order to them: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
-		    resources: {
-			github: "",
-			slides: ""
-		    }
-		}
-	    ]
+	{
+		date: [2013, 6, 4],
+		talks: [
+			{
+				title: 'Offline storage and PouchDB',
+				presenter: {
+					username: 'toniher',
+					displayname: 'Toni Hermoso Pulido'
+				},
+				description: '**There is life after connection** First part of the talk summarizes some current offlline storage options for web developers. Second part introduces and provides some examples of PouchDB, a convenient Javascript library for both offline (local) and online (remote) storage based on CouchDB API.',
+				resources: {
+					github: '',
+					slides: ''
+				}
+			},
+			{
+				title: 'Motion Detection In Video Through JavaScript',
+				presenter: {
+				  username: 'demoive',
+					displayname: 'Paulo Ávila'
+				},
+				description: '**Making use of HTML5 video, Webcam API and Canvas**. This interactive talk explores the possibilities of motion and even movement detection of a live video stream within the browser. Find out about accessing pixel-by-pixel information from individual video frames, different RGB (and alpha) channels, and contribute ideas for potential applications and improvements.',
+				resources: {
+					github: '',
+					slides: ''
+				}
+			},
+		        {
+			    title: 'Promises for Javascript',
+			    presenter: {
+				username: 'drpicox',
+				displayname: 'Dr. David Rodenas'
+			    },
+			    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+			    resources: {
+				github: "",
+				slides: ""
+			    }
+			}
+		]
         },
 	{
 		date: [2013, 7, 1]

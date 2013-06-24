@@ -98,7 +98,7 @@ a {
 }
 
 .empty {
-  background: url('/images/franjabw.png') no-repeat center bottom; 
+  background: url('/images/franjabw.png') no-repeat center bottom;
 }
 
 .wrapper {
@@ -232,9 +232,10 @@ footer {
 
 .footerbox {
   float: left;
-  width: 300px;
-  padding-right: 20px;
-  margin: 0;
+  width: 320px;
+  align: center;
+  text-align: left;
+  margin: 50px 0;
 }
 
 /* ==========================================================================
