@@ -81,6 +81,18 @@ var bcnjs_events = [
 					github: '',
 					slides: ''
 				}
+      },
+			{
+				title: 'Introduction to Elasticsearch',
+				presenter: {
+				  username: 'clintongormley',
+					displayname: 'Clinton Gormley'
+				},
+				description: 'Elasticsearch is an open source, realtime, distributed search and analytics engine. It\'s easy to get started but will grow with your application. Come find out what Elasticsearch can do for you.',
+				resources: {
+					github: '',
+					slides: ''
+				}
       }
 		]
 	},

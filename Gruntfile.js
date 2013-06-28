@@ -220,6 +220,7 @@ module.exports = function (grunt) {
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
             'CNAME',
+            'README.md',
             'BarcelonaJS.ics'
           ]
         }, {
