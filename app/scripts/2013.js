@@ -78,8 +78,8 @@ var bcnjs_events = [
 				},
 				description: '**Making use of HTML5 video, Webcam API and Canvas**. This interactive talk explores the possibilities of motion and even movement detection of a live video stream within the browser. Find out about accessing pixel-by-pixel information from individual video frames, different RGB (and alpha) channels, and contribute ideas for potential applications and improvements.',
 				resources: {
-					github: '',
-					slides: ''
+					github: 'http://demoive.github.io/Shaky-Shake-JS/',
+					slides: 'http://slid.es/demoive/shaky'
 				}
       },
 			{
