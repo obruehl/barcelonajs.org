@@ -67,7 +67,7 @@ var bcnjs_events = [
 				description: '**There is life after connection** First part of the talk summarizes some current offlline storage options for web developers. Second part introduces and provides some examples of PouchDB, a convenient Javascript library for both offline (local) and online (remote) storage based on CouchDB API.',
 				resources: {
 					github: '',
-					slides: ''
+					slides: 'http://www.cau.cat/slides/offline-pouchdb-bcnjs'
 				}
 			},
 			{
