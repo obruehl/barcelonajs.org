@@ -1,4 +1,17 @@
-<div class="next">
+<div class="special clearfix" ng-show="bcnjs.special">
+	<div class="special-next clearfix">
+		<div class="calendar">
+			<div class="day">{{bcnjs.date | date:'d'}}</div>
+			<div class="month">{{bcnjs.date | date:'MMMM'}}</div>
+		</div>
+		<div class="special-content">
+			<h3 ng-bind-html-unsafe="bcnjs.special.header"></h3>
+			<p ng-bind-html-unsafe="bcnjs.special.content"></p>
+		</div>
+	</div>
+</div>
+
+<div class="next" ng-hide="bcnjs.special">
 		<div class="sponsor-l">
 			<a href="http://www.xing.com"><img src="/images/086be0f5.xing.jpg" alt="XING"></a>
 		</div>
