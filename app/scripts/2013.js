@@ -91,7 +91,7 @@ var bcnjs_events = [
 				description: 'Elasticsearch is an open source, realtime, distributed search and analytics engine. It\'s easy to get started but will grow with your application. Come find out what Elasticsearch can do for you.',
 				resources: {
 					github: '',
-					slides: ''
+					slides: 'https://plus.google.com/u/0/106524024522865941765/posts/HrYLVwDLs4p'
 				}
       }
 		]
