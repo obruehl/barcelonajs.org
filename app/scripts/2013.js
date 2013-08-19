@@ -109,7 +109,20 @@ var bcnjs_events = [
 	},
 	{
 		date: [2013, 9, 3],
-		talks: []
+		talks: [
+			{
+				title: 'Videogular: An HTML5 video player for AngularJS',
+				presenter: {
+					username: 'elecash',
+					displayname: 'Raúl Jiménez'
+				},
+				description: 'Videogular is an Open Source project to develop a fully customizable video player for AngularJS. I will be talking about internals, AngularJS tricks, how to use the API and much more.',
+				resources: {
+					github: 'https://github.com/2fdevs/videogular',
+					slides: ''
+				}
+			}
+		]
 	},
 	{
 		date: [2013, 10, 7],
