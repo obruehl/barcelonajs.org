@@ -1,3 +1,10 @@
+// DATA FORMAT:
+// events : [ 
+//      { date: [ <year>, <month - 1>, <day> ],
+//        talks:  /*optional*/ [ ... ],
+//        special: /*optional*/ { ... },
+//      }
+// ]
 var bcnjs_events = [
 	{
 		date: [2013, 0, 3]
@@ -94,6 +101,18 @@ var bcnjs_events = [
 					slides: 'https://plus.google.com/u/0/106524024522865941765/posts/HrYLVwDLs4p'
 				}
 			},
+		]
+        },
+	{
+		date: [2013, 7, 1],
+		special: {
+			header: 'SpecialJS: Beachvolleyball and Beers',
+			content: 'We meet at Platja Nova Icaria (<a href="https://maps.google.com/maps?q=41.390449,2.201804&num=1&t=h&z=18">41.390449,2.201804</a>, green arrow) at 18.30 to play some volleyball and have a beer and talk JavaScript in the chiringuito after.'
+		}
+	},
+	{
+		date: [2013, 8, 10],
+		talks: [
 		        {
 			    title: 'Promises for Javascript',
 			    presenter: {
@@ -107,17 +126,6 @@ var bcnjs_events = [
 			    }
 			}
 		]
-        },
-	{
-		date: [2013, 7, 1],
-		special: {
-			header: 'SpecialJS: Beachvolleyball and Beers',
-			content: 'We meet at Platja Nova Icaria (<a href="https://maps.google.com/maps?q=41.390449,2.201804&num=1&t=h&z=18">41.390449,2.201804</a>, green arrow) at 18.30 to play some volleyball and have a beer and talk JavaScript in the chiringuito after.'
-		}
-	},
-	{
-		date: [2013, 8, 5],
-		talks: []
 	},
 	{
 		date: [2013, 9, 3],
