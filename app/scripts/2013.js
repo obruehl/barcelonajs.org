@@ -67,7 +67,7 @@ var bcnjs_events = [
 				description: '**There is life after connection** First part of the talk summarizes some current offlline storage options for web developers. Second part introduces and provides some examples of PouchDB, a convenient Javascript library for both offline (local) and online (remote) storage based on CouchDB API.',
 				resources: {
 					github: '',
-					slides: ''
+					slides: 'http://www.cau.cat/slides/offline-pouchdb-bcnjs'
 				}
 			},
 			{
@@ -78,8 +78,20 @@ var bcnjs_events = [
 				},
 				description: '**Making use of HTML5 video, Webcam API and Canvas**. This interactive talk explores the possibilities of motion and even movement detection of a live video stream within the browser. Find out about accessing pixel-by-pixel information from individual video frames, different RGB (and alpha) channels, and contribute ideas for potential applications and improvements.',
 				resources: {
+					github: 'http://demoive.github.io/Shaky-Shake-JS/',
+					slides: 'http://slid.es/demoive/shaky'
+				}
+      },
+			{
+				title: 'Introduction to Elasticsearch',
+				presenter: {
+				  username: 'clintongormley',
+					displayname: 'Clinton Gormley'
+				},
+				description: 'Elasticsearch is an open source, realtime, distributed search and analytics engine. It\'s easy to get started but will grow with your application. Come find out what Elasticsearch can do for you.',
+				resources: {
 					github: '',
-					slides: ''
+					slides: 'https://plus.google.com/u/0/106524024522865941765/posts/HrYLVwDLs4p'
 				}
 			},
 		        {
@@ -97,18 +109,39 @@ var bcnjs_events = [
 		]
         },
 	{
-		date: [2013, 7, 1]
+		date: [2013, 7, 1],
+		special: {
+			header: 'SpecialJS: Beachvolleyball and Beers',
+			content: 'We meet at Platja Nova Icaria (<a href="https://maps.google.com/maps?q=41.390449,2.201804&num=1&t=h&z=18">41.390449,2.201804</a>, green arrow) at 18.30 to play some volleyball and have a beer and talk JavaScript in the chiringuito after.'
+		}
 	},
 	{
-		date: [2013, 8, 5]
+		date: [2013, 8, 5],
+		talks: []
 	},
 	{
-		date: [2013, 9, 3]
+		date: [2013, 9, 3],
+		talks: [
+			{
+				title: 'Videogular: An HTML5 video player for AngularJS',
+				presenter: {
+					username: 'elecash',
+					displayname: 'Raúl Jiménez'
+				},
+				description: 'Videogular is an Open Source project to develop a fully customizable video player for AngularJS. I will be talking about internals, AngularJS tricks, how to use the API and much more.',
+				resources: {
+					github: 'https://github.com/2fdevs/videogular',
+					slides: ''
+				}
+			}
+		]
 	},
 	{
-		date: [2013, 10, 7]
+		date: [2013, 10, 7],
+		talks: []
 	},
 	{
-		date: [2013, 11, 5]
+		date: [2013, 11, 5],
+		talks: []
 	}
-]
+];
