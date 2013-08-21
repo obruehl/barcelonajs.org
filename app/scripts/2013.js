@@ -114,6 +114,30 @@ var bcnjs_events = [
 		date: [2013, 8, 10],
 		talks: [
 			{
+				title: 'FirefoxOS (1) - opening the web to billions of new web developers and users',
+				presenter: {
+					username: 'alinamierlus',
+					displayname: 'Alina Mierlus'
+				},
+				description: 'FirefoxOS is the new project of Mozilla - a global movement to empower and bring choice in the lives of new billions of Internet users. FirefoxOS runs on very cheap hardware, bringing the web to people in development markets and opportunities to new web developers. In this talk we will demo some of the capabilities of FirefoxOS.',
+				resources: {
+					github: 'http://github.com/alinamierlus',
+					slides: ''
+				}
+			},
+			{
+				title: 'FirefoxOS (2) - opening the web to billions of new web developers and users',
+				presenter: {
+					username: 'alinamierlus',
+					displayname: 'Alina Mierlus'
+				},
+				description: 'FirefoxOS is the new project of Mozilla - a global movement to empower and bring choice in the lives of new billions of Internet users. FirefoxOS runs on very cheap hardware, bringing the web to people in development markets and opportunities to new web developers. In this talk we will demo some of the capabilities of FirefoxOS.',
+				resources: {
+					github: 'http://github.com/alinamierlus',
+					slides: ''
+				}
+			},
+			{
 		    title: 'Promises for Javascript',
 		    presenter: {
 					username: 'drpicox',
