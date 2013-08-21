@@ -1,3 +1,10 @@
+// DATA FORMAT:
+// events : [ 
+//      { date: [ <year>, <month - 1>, <day> ],
+//        talks:  /*optional*/ [ ... ],
+//        special: /*optional*/ { ... },
+//      }
+// ]
 var bcnjs_events = [
 	{
 		date: [2013, 0, 3]
@@ -93,9 +100,9 @@ var bcnjs_events = [
 					github: '',
 					slides: 'https://plus.google.com/u/0/106524024522865941765/posts/HrYLVwDLs4p'
 				}
-      }
+			},
 		]
-	},
+        },
 	{
 		date: [2013, 7, 1],
 		special: {
@@ -104,8 +111,21 @@ var bcnjs_events = [
 		}
 	},
 	{
-		date: [2013, 8, 5],
-		talks: []
+		date: [2013, 8, 10],
+		talks: [
+		        {
+			    title: 'Promises for Javascript',
+			    presenter: {
+				username: 'drpicox',
+				displayname: 'Dr. David Rodenas'
+			    },
+			    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+			    resources: {
+				github: "",
+				slides: ""
+			    }
+			}
+		]
 	},
 	{
 		date: [2013, 9, 3],
