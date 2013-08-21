@@ -102,7 +102,7 @@ var bcnjs_events = [
 				}
 			},
 		]
-        },
+	},
 	{
 		date: [2013, 7, 1],
 		special: {
@@ -113,22 +113,22 @@ var bcnjs_events = [
 	{
 		date: [2013, 8, 10],
 		talks: [
-		        {
-			    title: 'Promises for Javascript',
-			    presenter: {
-				username: 'drpicox',
-				displayname: 'Dr. David Rodenas'
-			    },
-			    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
-			    resources: {
-				github: "",
-				slides: ""
-			    }
+			{
+		    title: 'Promises for Javascript',
+		    presenter: {
+					username: 'drpicox',
+					displayname: 'Dr. David Rodenas'
+		    },
+		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+		    resources: {
+					github: '',
+					slides: ''
+		    }
 			}
 		]
 	},
 	{
-		date: [2013, 9, 3],
+		date: [2013, 9, 8],
 		talks: [
 			{
 				title: 'Videogular: An HTML5 video player for AngularJS',
@@ -145,11 +145,11 @@ var bcnjs_events = [
 		]
 	},
 	{
-		date: [2013, 10, 7],
+		date: [2013, 10, 12],
 		talks: []
 	},
 	{
-		date: [2013, 11, 5],
+		date: [2013, 11, 10],
 		talks: []
 	}
 ];

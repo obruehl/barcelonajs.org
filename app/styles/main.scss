@@ -97,6 +97,24 @@ a {
   background: url('/images/franja.png') repeat-x center bottom;
 }
 
+.sponsor {
+  float: left;
+  width: 290px;
+  padding: 10px 10px 20px 10px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.imagelink {
+  display: block;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.sponsors {
+  font-size: 14px;
+}
+
 .empty {
   background: url('/images/franjabw.png') no-repeat center bottom;
 }
@@ -129,16 +147,6 @@ a {
   margin: 0 auto;
 }
 
-.sponsor-r {
-  width: 100px;
-  margin: 10px auto;
-}
-
-.sponsor-l {
-  width: 150px;
-  margin: 10px auto;
-}
-
 .day {
   font-size: 72px;
   line-height: 76px;
@@ -165,7 +173,7 @@ a {
   margin: 50px 0;
 }
 
-.talks {
+.talks, .sponsors {
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -214,7 +222,6 @@ a {
   background: url('/images/calendar.png') no-repeat;
   width: 50px;
   height: 50px;
-  display: inline-block;
 }
 #calendar span {
   display: none;
@@ -254,20 +261,6 @@ footer {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-  .sponsor-r {
-    margin: 25px 0 0 25px;
-    float: left;
-  }
-
-  .sponsor-l {
-    margin: 25px 0 0 0;
-    float: left;
-  }
-
-  .calendar {
-    float: left;
-  }
-
   .wrapper {
     width: 480px;
   }
@@ -325,7 +318,7 @@ footer {
     padding: 20px 20px 40px 20px;
   }
 
-  .talks {
+  .talks, .sponsors {
     width: 960px;
   }
 
@@ -338,7 +331,7 @@ footer {
     margin: 10px;
   }
 
-  .footerbox, .metabox {
+  .footerbox, .metabox, .sponsor {
     width: 250px;
     margin: 10px;
     padding: 20px 20px 40px 20px;
