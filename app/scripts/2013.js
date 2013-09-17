@@ -32,8 +32,8 @@ var bcnjs_events = [
 				},
 				description: '**Optimize a web page with a single command.** Grunt is the *Makefile* for JS projects. In this talk I present what is Grunt, which is its philosophy, and a small example how to use it. And the best of it, how to build and optimize everything with a simple command.',
 				resources: {
-					github: 'http://drpicox.github.io/gruntjs-presentation-introduction/#/grunt',
-					slides: 'https://github.com/drpicox/gruntjs-presentation-introduction'
+					slides: 'http://drpicox.github.io/gruntjs-presentation-introduction/#/grunt',
+					github: 'https://github.com/drpicox/gruntjs-presentation-introduction'
 				}
 			},
 			{
@@ -145,8 +145,8 @@ var bcnjs_events = [
 		    },
 		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
 		    resources: {
-					github: '',
-					slides: ''
+					slides: 'http://drpicox.github.io/promises-presentation-introduction/#/',
+					github: 'https://github.com/drpicox/promises-presentation-introduction'
 		    }
 			}
 		]
