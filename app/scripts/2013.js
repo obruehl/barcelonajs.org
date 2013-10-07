@@ -165,6 +165,18 @@ var bcnjs_events = [
 					github: 'https://github.com/2fdevs/videogular',
 					slides: ''
 				}
+			},
+      {
+				title: 'API.js',
+				presenter: {
+					username: 'patrickheneise',
+					displayname: 'Patrick Heneise'
+				},
+				description: 'In a world of mobile apps, single-page applications and flying web servers, JavaScript, Objective-C, Java and whats-so-not consumers, solid APIs are getting more and more important. Patrick is going to show how to create, test and document an API in Node.js with Express, Mocha, Dox and iodocs.',
+				resources: {
+					github: '',
+					slides: ''
+				}
 			}
 		]
 	},
