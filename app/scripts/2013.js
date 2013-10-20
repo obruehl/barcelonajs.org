@@ -1,28 +1,28 @@
 // DATA FORMAT:
 // events : [ 
-//      { date: [ <year>, <month - 1>, <day> ],
+//      { date: new Date( <year>, <month - 1>, <day>),
 //        talks:  /*optional*/ [ ... ],
 //        special: /*optional*/ { ... },
 //      }
 // ]
 var bcnjs_events = [
 	{
-		date: [2013, 0, 3]
+		date: new Date(2013, 0, 3)
 	},
 	{
-		date: [2013, 1, 7]
+		date: new Date(2013, 1, 7)
 	},
 	{
-		date: [2013, 2, 7]
+		date: new Date(2013, 2, 7)
 	},
 	{
-		date: [2013, 3, 4]
+		date: new Date(2013, 3, 4)
 	},
 	{
-		date: [2013, 4, 2]
+		date: new Date(2013, 4, 2)
 	},
 	{
-		date: [2013, 5, 6],
+		date: new Date(2013, 5, 6),
 		talks: [
 			{
 				title: 'Introduction to GruntJS',
@@ -63,7 +63,7 @@ var bcnjs_events = [
 		],
 	},
 	{
-		date: [2013, 6, 4],
+		date: new Date(2013, 6, 4),
 		talks: [
 			{
 				title: 'Offline storage and PouchDB',
@@ -104,14 +104,14 @@ var bcnjs_events = [
 		]
 	},
 	{
-		date: [2013, 7, 1],
+		date: new Date(2013, 7, 1),
 		special: {
 			header: 'SpecialJS: Beachvolleyball and Beers',
 			content: 'We meet at Platja Nova Icaria (<a href="https://maps.google.com/maps?q=41.390449,2.201804&num=1&t=h&z=18">41.390449,2.201804</a>, green arrow) at 18.30 to play some volleyball and have a beer and talk JavaScript in the chiringuito after.'
 		}
 	},
 	{
-		date: [2013, 8, 10],
+		date: new Date(2013, 8, 10),
 		talks: [
 			{
 				title: 'FirefoxOS (1) - opening the web to billions of new web developers and users',
@@ -152,7 +152,7 @@ var bcnjs_events = [
 		]
 	},
 	{
-		date: [2013, 9, 8],
+		date: new Date(2013, 9, 8),
 		talks: [
 			{
 				title: 'Videogular: An HTML5 video player for AngularJS',
@@ -181,11 +181,11 @@ var bcnjs_events = [
 		]
 	},
 	{
-		date: [2013, 10, 12],
+		date: new Date(2013, 10, 12),
 		talks: []
 	},
 	{
-		date: [2013, 11, 10],
+		date: new Date(2013, 11, 10),
 		talks: []
 	}
 ];
