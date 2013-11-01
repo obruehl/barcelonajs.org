@@ -182,7 +182,17 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2013, 10, 12),
-		talks: []
+		talks: [{
+				title: 'From jQuery to AngularJS',
+				presenter: {
+					username: 'victorbjelkholm',
+					displayname: 'Victor Bjelkholm'
+				},
+				description: 'From jQuery to AngularJS will be a talk for jQuery gods to become superheroic Angularistas. I\'ll start by explaining how jQuery works, how to create a todo application and then move on to an introduction of AngularJS and how to create the same application but in AngularJS instead of jQuery.',
+				resources: {
+					github: '',
+					slides: ''
+				}}]
 	},
 	{
 		date: new Date(2013, 11, 10),
