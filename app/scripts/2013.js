@@ -88,7 +88,7 @@ var bcnjs_events = [
 					github: 'http://demoive.github.io/Shaky-Shake-JS/',
 					slides: 'http://slid.es/demoive/shaky'
 				}
-      },
+	  },
 			{
 				title: 'Introduction to Elasticsearch',
 				presenter: {
@@ -138,16 +138,16 @@ var bcnjs_events = [
 				}
 			},
 			{
-		    title: 'Promises for Javascript',
-		    presenter: {
+			title: 'Promises for Javascript',
+			presenter: {
 					username: 'drpicox',
 					displayname: 'Dr. David Rodenas'
-		    },
-		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
-		    resources: {
+			},
+			description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+			resources: {
 					slides: 'http://drpicox.github.io/promises-presentation-introduction/#/',
 					github: 'https://github.com/drpicox/promises-presentation-introduction'
-		    }
+			}
 			}
 		]
 	},
@@ -166,7 +166,7 @@ var bcnjs_events = [
 					slides: ''
 				}
 			},
-      {
+	  {
 				title: 'API.js',
 				presenter: {
 					username: 'patrickheneise',
