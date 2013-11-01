@@ -1,5 +1,5 @@
 // DATA FORMAT:
-// events : [ 
+// events : [
 //      { date: new Date( <year>, <month - 1>, <day>),
 //        talks:  /*optional*/ [ ... ],
 //        special: /*optional*/ { ... },
@@ -182,7 +182,20 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2013, 10, 12),
-		talks: []
+		talks: [
+			{
+				title: 'Architecture for big Backbone Apps',
+				presenter: {
+					username: 'eth0lo',
+					displayname: 'Jean Carlos Meninno'
+				},
+				description: 'Backbone can be a dificult beast to tame, examples on how to manage complexity and scale the code base',
+				resources: {
+					github: '',
+					slides: ''
+				}
+			}
+		]
 	},
 	{
 		date: new Date(2013, 11, 10),
