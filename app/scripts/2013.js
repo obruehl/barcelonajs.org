@@ -88,7 +88,7 @@ var bcnjs_events = [
 					github: 'http://demoive.github.io/Shaky-Shake-JS/',
 					slides: 'http://slid.es/demoive/shaky'
 				}
-      },
+	  },
 			{
 				title: 'Introduction to Elasticsearch',
 				presenter: {
@@ -138,16 +138,16 @@ var bcnjs_events = [
 				}
 			},
 			{
-		    title: 'Promises for Javascript',
-		    presenter: {
+			title: 'Promises for Javascript',
+			presenter: {
 					username: 'drpicox',
 					displayname: 'Dr. David Rodenas'
-		    },
-		    description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
-		    resources: {
+			},
+			description: '**This is the end of weird callback structures.** Javascript codes are usually full of callbacks; they are so complex... Promises make them easy: cleaner method signatures, cleaner return/error semantics, simple compositions, easy parallel/join structures... And they are awesome. I *promise*.',
+			resources: {
 					slides: 'http://drpicox.github.io/promises-presentation-introduction/#/',
 					github: 'https://github.com/drpicox/promises-presentation-introduction'
-		    }
+			}
 			}
 		]
 	},
@@ -166,7 +166,7 @@ var bcnjs_events = [
 					slides: ''
 				}
 			},
-      {
+	  {
 				title: 'API.js',
 				presenter: {
 					username: 'patrickheneise',
@@ -182,20 +182,42 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2013, 10, 12),
-		talks: [
-			{
-				title: 'Architecture for big Backbone Apps',
-				presenter: {
-					username: 'eth0lo',
-					displayname: 'Jean Carlos Meninno'
-				},
-				description: 'Backbone can be a dificult beast to tame, examples on how to manage complexity and scale the code base',
-				resources: {
-					github: '',
-					slides: ''
-				}
-			}
-		]
+		talks: [{
+      title: 'Architecture for big Backbone Apps',
+      presenter: {
+        username: 'eth0lo',
+        displayname: 'Jean Carlos Meninno'
+      },
+      description: 'Backbone can be a dificult beast to tame, examples on how to manage complexity and scale the code base',
+      resources: {
+        github: '',
+        slides: ''
+      }
+    },
+    {
+      title: 'From jQuery to AngularJS',
+      presenter: {
+        username: 'victorbjelkholm',
+        displayname: 'Victor Bjelkholm'
+      },
+      description: 'From jQuery to AngularJS will be a talk for jQuery gods to become superheroic Angularistas. I\'ll start by explaining how jQuery works, how to create a todo application and then move on to an introduction of AngularJS and how to create the same application but in AngularJS instead of jQuery.',
+      resources: {
+        github: '',
+        slides: ''
+      }
+    },
+    {
+      title: 'Using PouchDB for PhoneGap/Cordova apps',
+      presenter: {
+        username: 'chrisekelley',
+        displayname: 'Chris E. Kelley'
+      },
+      description: 'This talk will focus on my experiences deploying Android apps that sync with CouchDB. I will focus mostly on PouchDB but will also discuss the other frameworks I have been using to deploy Android applications (Backbone.js, Coconut, GCM/Urban Airship, PhoneGap/Cordova).',
+      resources: {
+        github: 'https://github.com/chrisekelley/barcelonajs-pouchdb-talk-12nov2013',
+        slides: 'http://chrisekelley.github.io/barcelonajs-pouchdb-talk-12nov2013/'
+      }
+    }]
 	},
 	{
 		date: new Date(2013, 11, 10),
