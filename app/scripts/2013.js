@@ -182,7 +182,20 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2013, 10, 12),
-		talks: []
+		talks: [
+      {
+        title: 'Using PouchDB for PhoneGap/Cordova apps',
+        presenter: {
+          username: 'chrisekelley',
+          displayname: 'Chris E. Kelley'
+        },
+        description: 'This talk will focus on my experiences deploying Android apps that sync with CouchDB. I will focus mostly on PouchDB but will also discuss the other frameworks I have been using to deploy Android applications (Backbone.js, Coconut, GCM/Urban Airship, PhoneGap/Cordova).',
+        resources: {
+          github: 'https://github.com/chrisekelley/barcelonajs-pouchdb-talk-12nov2013',
+          slides: 'http://chrisekelley.github.io/barcelonajs-pouchdb-talk-12nov2013/'
+        }
+      }
+    ]
 	},
 	{
 		date: new Date(2013, 11, 10),
