@@ -202,8 +202,8 @@ var bcnjs_events = [
       },
       description: 'From jQuery to AngularJS will be a talk for jQuery gods to become superheroic Angularistas. I\'ll start by explaining how jQuery works, how to create a todo application and then move on to an introduction of AngularJS and how to create the same application but in AngularJS instead of jQuery.',
       resources: {
-        github: '',
-        slides: ''
+        github: 'https://github.com/VictorBjelkholm/from-jquery-to-angularjs',
+        slides: 'http://victorbjelkholm.github.io/from-jquery-to-angularjs/'
       }
     },
     {
