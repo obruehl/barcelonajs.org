@@ -221,6 +221,17 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2013, 11, 10),
-		talks: []
+		talks: [{
+      title: 'An introduction to the MongoDB Node.js driver',
+      presenter: {
+        username: 'christkv',
+        displayname: 'Christian Kvalheim'
+      },
+      description: 'Get started with Node.js driver and MongoDB',
+      resources: {
+        github: 'https://github.com/mongodb/node-mongodb-native/',
+        slides: ''
+      }			
+		}]
 	}
 ];
