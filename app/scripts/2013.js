@@ -244,6 +244,18 @@ var bcnjs_events = [
 				github: '',
 				slides: ''
 			}
-		}]
+		},
+    {
+      title: 'Xmas Special JS',
+      presenter: {
+        username: 'BcnJS',
+        displayname: 'Barcelona JS'
+      },
+      description: 'It\'s that time of the year again ... Let\'s get together, have a beer and celebrate the end of the year!',
+      resources: {
+        github: '',
+        slides: ''
+      }
+    }]
 	}
 ];
