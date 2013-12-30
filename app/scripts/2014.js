@@ -13,8 +13,8 @@ var bcnjs_events = [
   {
     date: new Date(2014, 0, 25),
     special: {
-			header: 'AngularJS Special',
-			content: ''
+      header: 'AngularJS Special',
+      content: ''
 		}
   },
 	{
