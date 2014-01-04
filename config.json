@@ -8,8 +8,8 @@
 	},
 
 	"bundles": {
-		"/css/all.css": [
-			"/css/main.less"
+		"/assets/all.css": [
+			"/assets/main.less"
 		]
 	}
 }

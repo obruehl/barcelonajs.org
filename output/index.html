@@ -8,62 +8,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Welcome!</title>
     <meta name="viewport" content="width=device-width">
+		<script type="text/javascript" src="//use.typekit.net/mqp5ibc.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/main.css"> 
 </head>
 
 <body>
     <header>
-        <div class="bcnjs-header">
-            <img class="bcnjs-logo" src="images/bcnjs-logo.png" alt="Barcelona JS">
-        </div>
+        <div class="header">
+					<div class="logo"></div>
+					<h1 class="header-text">BarcelonaJS</h1>
+				</div>
     </header>
     <nav>
-        <ul class="bcnjs-navigation">
-            <li>
-                <a href="">Current Event</a>
+        <ul class="navigation">
+						<li>
+                <a href="">Previous Events</a>
             </li>
             <li>
-                <a href="">Current Event</a>
-            </li>
-            <li>
-                <a href="">Current Event</a>
+                <a href="">Information</a>
             </li>
         </ul>
     </nav>
-    <section id="next-event" class="bcnjs-next-event">
-        <div class="bcnjs-next-event-date">
+    <section id="next-event" class="next-event">
+        <div class="next-event-date">
             Next Event: December 12, 2013 at 19:00
         </div>
     </section>
-    <section id="next-event-speakers" class="bcnjs-next-event-speakers">
+    <section id="next-event-speakers" class="next-event-speakers">
 
-        <div class="bcnjs-next-event-speaker">
-            <img src="images/picture_test.png" class="bcnjs-speaker-picture"alt="">
-            <span class="bcnjs-speaker-name">Jane Doe</span>
+        <div class="next-event-speaker">
+            <img src="assets/picture_test.png" class="speaker-picture"alt="">
+            <span class="speaker-name">Jane Doe</span>
+            <h3>Free slot</h3>
+            <p>**This slot could be yours! Submit your talk now.**  You did some crazy stuff with JavaScript? You want to show it to the community?\nDrop us a line on your topic on [Twitter](https://twitter.com/bcnjs) or to [Google+](https://plus.google.com/u/0/communities/115705669406517039298).</p>
+        </div>
+
+        <div class="next-event-speaker">
+            <img src="assets/picture_test.png" class="speaker-picture"alt="">
+            <span class="speaker-name">Jane Doe</span>
             <h3>title</h3>
             <p>Dolor scratched cras nec catnip egestas chase the red dot, aliquam amet elit et sleep in the sink tail flick. I don't like that food pellentesque tempus amet meow tristique, nullam sleep on your face lick neque</p>
         </div>
 
-        <div class="bcnjs-next-event-speaker">
-            <img src="images/picture_test.png" class="bcnjs-speaker-picture"alt="">
-            <span class="bcnjs-speaker-name">Jane Doe</span>
-            <h3>title</h3>
-            <p>Dolor scratched cras nec catnip egestas chase the red dot, aliquam amet elit et sleep in the sink tail flick. I don't like that food pellentesque tempus amet meow tristique, nullam sleep on your face lick neque</p>
-        </div>
-
-        <div class="bcnjs-next-event-speaker">
-            <img src="images/picture_test.png" class="bcnjs-speaker-picture"alt="">
-            <span class="bcnjs-speaker-name">Jane Doe</span>
+        <div class="next-event-speaker">
+            <img src="assets/picture_test.png" class="speaker-picture"alt="">
+            <span class="speaker-name">Jane Doe</span>
             <h3>title</h3>
             <p>Dolor scratched cras nec catnip egestas chase the red dot, aliquam amet elit et sleep in the sink tail flick. I don't like that food pellentesque tempus amet meow tristique, nullam sleep on your face lick neque</p>
         </div>
     </section>
-    <section class="bcnjs-location">
-        <h2>Event Location</h2>
-        <div class="bcnjs-map">
+		
+		<section class="sponsors clearfix">
+			<div class="sponsor">
+				<p>An event presented by:</p>
+				<a class="imagelink" href="http://www.mobileworldcentre.com"><img src="/assets/mwc.png" alt="Mobile World Centre" /></a>
+			</div>
+			<div class="sponsor">
+				<p>With beverages sponsored by:</p>
+				<a class="imagelink" href="http://www.estrelladamm.com"><img src="/assets/estrella.png" alt="estrella" /></a>
+			</div>
+		</section>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2993.408016694471!2d2.1716783!3d41.3869447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f1223c2867%3A0x1a7fcd766587654!2scarrer+de+fontanella%2C+2!5e0!3m2!1sen!2ses!4v1386431643767" width="1168" height="400" frameborder="0" style="border:0"></iframe>
+    <section class="location">
+        <h2>Event Location</h2>
+        <div class="map">
+
+            <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/bcnjs.gnm5ha8k/mm/zoompan,geocoder,share.html?secure=1#17/41.38731/2.17180'></iframe>
         </div>
 
     </section>
