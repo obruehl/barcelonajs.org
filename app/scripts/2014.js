@@ -6,10 +6,6 @@
 //      }
 // ]
 var bcnjs_events = [
-	{
-		date: new Date(2014, 0, 9),
-    talks: []
-	},
   {
     date: new Date(2014, 0, 25),
     special: {
