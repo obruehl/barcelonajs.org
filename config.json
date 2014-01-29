@@ -7,6 +7,13 @@
 		"port": 9009
 	},
 
+	"parser": {
+    "markdown": {
+      "gfm": true,
+      "pedantic": false,
+      "sanitize": true
+    }
+  },
 	"bundles": {
 		"/assets/all.css": [
 			"/assets/main.less"

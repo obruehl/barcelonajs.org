@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Patrick Heneise",
+    "twitter": "PatrickHeneise",
+    "portrait": "assets/picture_test.png",
+    "email": "patrick@barcelonajs.org"
+  },
+  {
+    "name": "Jean-Carlos Meninno",
+    "twitter": "eth0lo",
+    "portrait": "assets/picture_test.png",
+    "email": "jean@barcelonajs.org"
+  },
+  {
+    "name": "Isabel Cabezas",
+    "twitter": "IsabelCabezas",
+    "portrait": "assets/picture_test.png",
+    "email": "isabel@barcelonajs.org"
+  }
+]
