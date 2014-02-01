@@ -1,17 +1,6 @@
-{{#event}}
-  <div class="next-event-speaker empty">
-    <img src="assets/picture_test.png" class="speaker-picture" alt="">
-    <span class="speaker-name">Jane Doe</span>
-    <h3>title</h3>
-    <p>Dolor scratched cras nec catnip egestas chase the red dot, aliquam amet elit et sleep in the sink tail flick. I don't like that food pellentesque tempus amet meow tristique, nullam sleep on your face lick neque</p>
-  </div>
-{{/event}}
-
-{{^event}}
-  <div class="next-event-speaker">
-    <img src="assets/picture_test.png" class="speaker-picture" alt="">
-    <span class="speaker-name">Jane Doe</span>
-    <h3>Free slot</h3>
-    <p>**This slot could be yours! Submit your talk now.**  You did some crazy stuff with JavaScript? You want to show it to the community?\nDrop us a line on your topic on [Twitter](https://twitter.com/bcnjs) or to [Google+](https://plus.google.com/u/0/communities/115705669406517039298).</p>
-  </div>
-{{/event}}
+<div class="next-event-speaker">
+  <img src="assets/picture_test.png" class="speaker-picture" alt="">
+  <span class="speaker-name">{{speaker.name}}</span>
+  <h3>{{title}}</h3>
+  <p>{{description}}</p>
+</div>

@@ -1,32 +1,30 @@
+[
 {
-  "1": [
-    {
-      "title": "Hello",
-      "description": "** markdown **",
-      "level": "Beginner",
-      "language": "en",
-      "git": "",
-      "slides": "",
-      "video": "",
-      "speaker": {
-        "name": "John Doe",
-        "twitter": "johndoe",
-        "portrait": "assets/picture_test.png"
-      }
-    },
-    {
-      "title": "",
-      "description": "",
-      "level": "",
-      "language": "en",
-      "git": "",
-      "slides": "",
-      "video": "",
-      "speaker": {
-        "name": "",
-        "twitter": "",
-        "portrait": ""
-      }
-    }
-  ]
+  "title": "Hello",
+  "description": "** markdown **",
+  "level": "Beginner",
+  "language": "en",
+  "git": "",
+  "slides": "",
+  "video": "",
+  "speaker": {
+    "name": "Patrick",
+    "twitter": "johndoe",
+    "portrait": "assets/picture_test.png"
+  }
+},
+{
+  "title": "",
+  "description": "",
+  "level": "",
+  "language": "en",
+  "git": "",
+  "slides": "",
+  "video": "",
+  "speaker": {
+    "name": "",
+    "twitter": "",
+    "portrait": ""
+  }
 }
+]
