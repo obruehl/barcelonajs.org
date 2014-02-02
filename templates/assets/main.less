@@ -37,7 +37,7 @@ header {
 }
 
 .header {
-    .container;
+    &:extend(.container);
 		.height(150px);
 }
 
@@ -165,13 +165,11 @@ nav {
 
 .additional {
   .container;
-      
+
   .location {
-    .make-lg-column(4);
-    .make-md-column(4);
     background-color: @grey;
     padding: 30px;
-  
+
     .map {
       .height(300px);
       border: 1px solid rgba(148, 148, 148, 0.4);
