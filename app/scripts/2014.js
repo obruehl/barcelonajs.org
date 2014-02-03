@@ -15,7 +15,16 @@ var bcnjs_events = [
   },
 	{
 		date: new Date(2014, 1, 13),
-    talks: []
+    talks: [
+      {
+        title: 'Using the API Blueprint to generate nodejs consumers',
+        presenter: {
+          username: 'bpedro',
+          displayname: 'Bruno Pedro'
+        },
+        description: 'I\'ll show you how to generate a nodejs API consumer by using the API Blueprint (http://apiblueprint.org/) to generate code from a Postman (http://www.getpostman.com/) collection.'
+      }
+    ]
 	},
 	{
 		date: new Date(2014, 2, 13),
