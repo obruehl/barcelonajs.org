@@ -23,6 +23,18 @@ var bcnjs_events = [
           displayname: 'Bruno Pedro'
         },
         description: 'I\'ll show you how to generate a nodejs API consumer by using the API Blueprint (http://apiblueprint.org/) to generate code from a Postman (http://www.getpostman.com/) collection.'
+      },
+      {
+        title: 'Introduction to testing with AngularJS',
+        presenter: {
+          username: 'VictorBjelkholm',
+          displayname: 'Victor Bjelkholm'
+        },
+        description: '*Introduction to testing with AngularJS* will be the talk for you if you\'ve always been interested what testing is but never took the step to finally start doing it. The talk will be mainly focused on testing basics and unit testing in AngularJS',
+        resources: {
+          github: '',
+          slides: ''
+        }
       }
     ]
 	},
