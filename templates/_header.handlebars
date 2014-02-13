@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{{site-title}}}</title>
     <meta name="viewport" content="width=device-width">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="//use.typekit.net/mqp5ibc.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -24,14 +25,8 @@
 
   <nav>
     <ul class="navigation">
-        <li>
-            <a href="">Previous Events</a>
-        </li>
-        <li>
-            <a href="">Code of Conduct</a>
-        </li>
-        <li>
-            <a href="#/about">Information</a>
-        </li>
+      {{#navbar}}
+        <li><a href="{{{href}}}">{{label}}</a>
+      {{/navbar}}
     </ul>
   </nav>

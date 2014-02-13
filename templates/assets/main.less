@@ -10,6 +10,9 @@ body {
 	line-height: 1.4;
 }
 
+.content {
+	.container;
+}
 
 .multbg-top-to-bottom (@size : 1px, @color: black, @radius: 1px) {
     border-top: @size solid @color;
@@ -88,42 +91,49 @@ nav {
     }
 }
 
-.next-event-speakers {
-    .container;
-    .margin-top(-26px);
-    .margin-bottom(52px);
-    .multbg-top-to-bottom(1px, rgba(148, 148, 148, 0.4), 1px);
-    background-color: white;
+.events {
+	.container;
+	.margin-top(-26px);
+	.margin-bottom(52px);
+	.multbg-top-to-bottom(1px, rgba(148, 148, 148, 0.4), 1px);
+	background-color: white;
 
-    .next-event-speaker {
-        .make-md-column-offset(1);
-        .make-lg-column-offset(1);
-        .make-lg-column(4);
-        .make-md-column(4);
-        text-align: center;
+	.event {
+		.make-md-column-offset(1);
+		.make-lg-column-offset(1);
+		.make-lg-column(4);
+		.make-md-column(4);
+		text-align: left;
+		
+		.meta {
+			text-transform:uppercase;
+			font-weight: 800;
+		}
 
-        img {
-            .margin-top(26px);
-            border-radius: 50%;
-            -webkit-box-shadow: 0 5px 6px -6px @black;
-               -moz-box-shadow: 0 5px 6px -6px @black;
-                    box-shadow: 0 5px 6px -6px @black;
-            width: 60%;
-        }
-    }
-    .speaker-name {
-        .line-height(23px);
-        background: url("../assets/bg-menu.png") repeat @red;
-        border-bottom: 3px solid fade(@black, 10%);
-        color: white;
-        display: block;
-        font-weight: bold;
-        margin-top: -13%;
-        margin-bottom: 8%;
-        position: relative;
-        width: 70%;
-        z-index: 100;
-    }
+		.speaker-name {
+			.line-height(23px);
+			background: url("../assets/bg-menu.png") repeat @red;
+			border-bottom: 3px solid fade(@black, 10%);
+			color: white;
+			display: block;
+			font-weight: bold;
+			margin-top: -13%;
+			margin-bottom: 8%;
+			position: relative;
+			width: 70%;
+			z-index: 100;
+		}
+
+		img {
+//            .margin-top(26px);
+//            border-radius: 50%;
+//            -webkit-box-shadow: 0 5px 6px -6px @black;
+//               -moz-box-shadow: 0 5px 6px -6px @black;
+//                    box-shadow: 0 5px 6px -6px @black;
+				width: 100%;
+				height: 100%;
+		}
+	}
 }
 
 .empty {
@@ -131,6 +141,10 @@ nav {
     background: url("../assets/franjabw.png") repeat white;
     color: gray;
   }
+}
+
+.about {
+	.container;
 }
 
 .sponsor {
@@ -148,19 +162,31 @@ nav {
 
 .teams {
   .container;
-  .member {
-    .make-lg-column(2);
-    .make-md-column(2);
-    text-align: center;
-    img {
-      .margin-top(26px);
-      border-radius: 50%;
-      -webkit-box-shadow: 0 5px 6px -6px @black;
-         -moz-box-shadow: 0 5px 6px -6px @black;
-              box-shadow: 0 5px 6px -6px @black;
-      width: 60%;
-    }
-  }
+
+	.team {
+		.container;
+
+		.member {
+			.make-lg-column(3);
+			.make-md-column(3);
+			text-align: center;
+
+			.member-header {
+				.margin-top(26px);
+				height: 140px;
+				
+				img {
+					margin-top: 10px;
+					border-radius: 50%;
+					-webkit-box-shadow: 0 5px 6px -6px @black;
+						 -moz-box-shadow: 0 5px 6px -6px @black;
+									box-shadow: 0 5px 6px -6px @black;
+					width: 120px;
+					height: 120px;
+				}
+			}
+		}
+	}
 }
 
 .additional {

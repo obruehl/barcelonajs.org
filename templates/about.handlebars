@@ -1,0 +1,35 @@
+{{> header }}
+
+<section class="about">
+	<h2>About BarcelonaJS</h2>
+	<p>Barcelona.JS is a usergroup focused on JavaScript and related topics. We meet regularly on the second Thursday each month at 19.15 at the Mobile World Centre, C/ de Fontanella, 2 in Barcelona.</p>
+</section>
+
+<section class="teams">
+  <h2>The Teams</h2>
+	{{#teams}}
+		<div class="team">
+			<h3>{{label}}</h3>
+			{{#members}}
+				<div class="member">
+					<div class="member-header">
+					{{#if portrait}}
+						<img src="{{portrait}}" class="team-picture" alt="{{name}}">
+					{{else }}
+						<span class="no-picture fa-stack fa-5x">
+							<i class="fa fa-circle-o fa-stack-2x"></i>
+							<i class="fa fa-question fa-stack-1x"></i>
+						</span>
+					{{/if}}
+					</div>
+					<h4 class="team-name"><a href="http://twitter.com/{{twitter}}">{{name}}</a></h4>
+					{{#if bio}}
+						<p>{{bio}}</p>
+					{{/if}}
+				</div>
+			{{/members}}
+		</div>
+	{{/teams}}
+</section>
+
+{{> footer }}

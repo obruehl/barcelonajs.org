@@ -1,9 +1,4 @@
----
-title: BarcelonaJS 2014 Code of Conduct
-forked from: JSConf EU 2012
----
-
-# Code of Conduct
+# BarcelonaJS 2014 Code of Conduct
 
 All attendees, speakers, sponsors and volunteers at BarcelonaJS are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting coorporation from all participants to help ensuring a safe environment for everybody.
 
@@ -36,3 +31,5 @@ In case you can’t find a staff member, Isabel is always there for you: [@isabe
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+
+forked from: JSConf EU 2012

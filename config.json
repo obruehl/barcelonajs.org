@@ -3,9 +3,10 @@
 	"content_dir": "contents",
 	"output_dir": "dist",
 
-	"server": {
-		"port": 9009
-	},
+  "generator" : {
+    "blank": true,
+    "skip_paths": ["/assets/less*"]
+  },
 
 	"parser": {
     "markdown": {
@@ -14,9 +15,21 @@
       "sanitize": true
     }
   },
+
 	"bundles": {
 		"/assets/all.css": [
 			"/assets/main.less"
 		]
+	},
+	
+	"sitemap_generator": {
+    "url_root": "http://barcelonajs.org"
+	},
+	
+	"plugins": {
+    "template_engine": "punch-engine-handlebars",
+		"generator_hooks": {
+        "sitemap_generator": "punch-sitemap-generator"
+    }
 	}
 }

@@ -1,8 +1,68 @@
 {
-	"site-title": "Welcome!",
-	"footer-text": "Built with <a href=\"http://laktek.github.com/punch\">Punch</a>",
-	"navbar": [
-        { "label": "Home", "href": "/" },
-        { "label": "About", "href": "/about" }
-	]
+    "site-title": "BarcelonaJS",
+    "navbar": [
+				{
+            "label": "Code of Conduct",
+            "href": "/code"
+        },
+				{
+            "label": "About",
+            "href": "/about"
+        },
+        {
+            "label": "Home",
+            "href": "/"
+        }
+    ],
+    "teams": [
+        {
+            "label": "CoreJS",
+            "members": [
+                {
+                    "name": "Patrick Heneise",
+                    "twitter": "PatrickHeneise",
+                    "portrait": "assets/team/patrick.jpg",
+                    "email": "patrick@barcelonajs.org",
+										"bio": "Independent consultant and developer. Founder of BarcelonaJS.org"
+                },
+                {
+                    "name": "Jean-Carlos Meninno",
+                    "twitter": "eth0lo",
+                    "email": "jean@barcelonajs.org"
+                },
+                {
+                    "name": "Isabel Cabezas",
+                    "twitter": "IsabelCabezas",
+                    "portrait": "assets/team/isabel.jpg",
+                    "email": "isabel@barcelonajs.org"
+                }
+            ]
+        },
+        {
+            "label": "AngularBCN",
+            "members": [
+                {
+                    "name": "Jose Roya",
+                    "portrait": "assets/team/jose.jpg",
+                    "email": "angular@barcelonajs.org",
+                    "twitter": "_joseraya"
+                },
+                {
+                    "name": "Sergi Gimeno",
+                    "portrait": "assets/team/sergi.jpg",
+                    "email": "angular@barcelonajs.org",
+                    "twitter": "_sgimeno"
+                }
+            ]
+        },
+        {
+            "label": "MobileJS",
+            "members": {
+                "name": "Alina Mierlus",
+                "portrait": "assets/team/alina.jpg",
+                "email": "mobile@barcelonajs.org",
+                "twitter": "alina_mierlus"
+            }
+        }
+    ]
 }

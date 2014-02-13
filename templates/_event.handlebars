@@ -1,0 +1,18 @@
+<article class="event">
+  <header class="speaker">
+		{{#if speaker.portrait}}
+			<img src="{{speaker.portrait}}" class="speaker-picture" alt="{{name}}">
+		{{else }}
+			<span class="no-picture fa-stack fa-5x">
+				<i class="fa fa-square-o fa-stack-2x"></i>
+				<i class="fa fa-question fa-stack-1x"></i>
+			</span>
+		{{/if}}
+		<span class="speaker-name">{{speaker.name}}</span>
+	</header>
+  <div class="meta">
+		{{language}} {{level}}
+  </div>
+  <h3>{{title}}</h3>
+  <p>{{description}}</p>
+</article>
