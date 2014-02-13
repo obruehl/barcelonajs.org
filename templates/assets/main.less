@@ -87,12 +87,14 @@ nav {
 
     .next-event-date {
         .container;
+				font-size: 21px;
         .line-height(100px);
     }
 }
 
 .events {
 	.container;
+	padding-top: 25px;
 	.margin-top(-26px);
 	.margin-bottom(52px);
 	.multbg-top-to-bottom(1px, rgba(148, 148, 148, 0.4), 1px);
@@ -109,10 +111,24 @@ nav {
 			text-transform:uppercase;
 			font-weight: 800;
 		}
+		
+		.speaker {
+			background: white;
+			text-align: center;
+		}
+		
+		.speaker-portrait {
+			width: 100%;
+			height: 150px;
+			background-position: center center;
+    	background-repeat: no-repeat;
+		}
 
 		.speaker-name {
-			.line-height(23px);
-			background: url("../assets/bg-menu.png") repeat @red;
+			.line-height(28px);
+			text-transform: uppercase;
+			padding-left: 10px;
+			background: rgba(36,27,28, .9);
 			border-bottom: 3px solid fade(@black, 10%);
 			color: white;
 			display: block;
@@ -122,16 +138,6 @@ nav {
 			position: relative;
 			width: 70%;
 			z-index: 100;
-		}
-
-		img {
-//            .margin-top(26px);
-//            border-radius: 50%;
-//            -webkit-box-shadow: 0 5px 6px -6px @black;
-//               -moz-box-shadow: 0 5px 6px -6px @black;
-//                    box-shadow: 0 5px 6px -6px @black;
-				width: 100%;
-				height: 100%;
 		}
 	}
 }
@@ -191,9 +197,11 @@ nav {
 
 .additional {
   .container;
-
+	background-color: @grey;
+	
   .location {
-    background-color: @grey;
+		.make-lg-column(6);
+		.make-md-column(6);
     padding: 30px;
 
     .map {
@@ -212,4 +220,48 @@ nav {
       }
     }
   }
+	
+	.mailing {
+		.make-lg-column(6);
+		.make-md-column(6);
+		padding: 30px;
+	}
+}
+
+.footer {
+	background: #fafafa;
+	color: #919191;
+	.margin-top(30px);
+	border-top: 1px solid #efefef;
+	
+	.about {
+		.make-lg-column(3);
+		.make-md-column(3);
+	}
+	
+	.social {
+		.make-lg-column(3);
+		.make-md-column(3);
+		#gplus {
+			color: red;
+		}
+		
+		#cal {
+			color: gray;
+		}
+		
+		#gh {
+			color: black;
+		}
+	}
+	
+	.links {
+		.make-lg-column(3);
+		.make-md-column(3);
+	}
+	
+	.footer-meta {
+		.make-lg-column(3);
+		.make-md-column(3);
+	}
 }
