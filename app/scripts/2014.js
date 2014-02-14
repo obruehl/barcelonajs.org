@@ -57,7 +57,17 @@ var bcnjs_events = [
 	},
 	{
 		date: new Date(2014, 4, 8),
-    talks: []
+    talks: [
+    	{
+			title: 'JS Apps with ArangoDB Application Server Foxx',
+			presenter: {
+				username: 'obruehl',
+				displayname: 'Oliver Bruehl and Lucas Dohmen'
+			},
+			description: 'Foxx is a feature of the free and open source NoSQL database ArangoDB. It allows you to build APIs directly on top of the database and therefore skip the middleman (Rails, Django or whatever your favorite web framework is). This can for example be used to build a backend for Single Page Web Applications. It is designed with simplicity and the specific use case of modern client-side MVC frameworks in mind featuring tools like an asset delivery system.' 
+}
+
+    	]
 	},
 	{
 		date: new Date(2014, 5, 12),
