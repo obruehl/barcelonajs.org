@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{{{site-title}}}</title>
-		<meta name="viewport" content="width=device-width">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<script type="text/javascript" src="//use.typekit.net/mqp5ibc.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-		<link rel="stylesheet" type="text/css" media="screen" href="/assets/all.css">
-</head>
-
-<body>
-	<header>
-		<div class="header">
-			<div class="logo"></div>
-			<h1 class="header-text">BarcelonaJS</h1>
-		</div>
-	</header>
-	<nav>
-		<ul class="navigation">
-			{{#navbar}}
-				<li><a href="{{{href}}}">{{label}}</a>
-			{{/navbar}}
-		</ul>
-	</nav>
+{{> header}}
 
 	<div role="main">
 		<section id="next-event" class="next-event">
@@ -46,11 +16,11 @@
 		<section class="sponsors">
 			<div class="sponsor">
 				<p>An event presented by:</p>
-				<a class="imagelink" href="http://www.mobileworldcentre.com"><img src="/assets/mwc.png" alt="Mobile World Centre" /></a>
+				<a class="imagelink" href="http://www.mobileworldcentre.com"><img src="assets/mwc.png" alt="Mobile World Centre" /></a>
 			</div>
 			<div class="sponsor">
 				<p>With beverages sponsored by:</p>
-				<a class="imagelink" href="http://www.estrelladamm.com"><img src="/assets/estrella.png" alt="estrella" /></a>
+				<a class="imagelink" href="http://www.estrelladamm.com"><img src="assets/estrella.png" alt="estrella" /></a>
 			</div>
 		</section>
 
