@@ -44,7 +44,19 @@
 		]
 	},
 	{
-		"date": "2014-03-12T23:00:00.000Z",
+		"date": "2014-03-13T23:00:00.000Z",
+		"talks": [
+			{
+				"title": "Backbone, Martionette and other puppets",
+				"presenter": {
+					"username": "ainformatico",
+					"displayname": "Alejandro El Informático"
+				},
+				"description": "Now that you know Backbone.js is time to become a puppeteer and use Martionette.js, a composite application library for Backbone.js that aims to simplify the construction of large scale Javascript applications."
+			}
+		]
+	},
+	{
 		"talks": []
 	},
 	{
