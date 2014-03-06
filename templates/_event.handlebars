@@ -1,7 +1,13 @@
 <article class="event">
   <header class="speaker">
 		{{#if speaker}}
-			<div class="speaker-portrait" style="background-image: url({{speaker.portrait}});"></div>
+      {{#if speaker.portrait}}
+			   <div class="speaker-portrait" style="background-image: url({{speaker.portrait}});"></div>
+      {{else }}
+        <span class="fa-stack fa-5x">
+          <i class="fa fa-question fa-stack-1x"></i>
+        </span>
+      {{/if}}
 			<span class="speaker-name">{{speaker.name}}</span>
 		{{else }}
 			<span class="fa-stack fa-5x">
@@ -12,7 +18,7 @@
 	</header>
 	{{#if title}}
 		<div class="meta">
-			{{language}} {{level}}
+			Language: {{language}} | Level: {{level}}
 		</div>
 		<h3>{{title}}</h3>
 		<p>{{description}}</p>

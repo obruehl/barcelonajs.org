@@ -16,12 +16,12 @@ task('copy', [], function () {
 			found = true;
 		}
 	});
-	
-	fs.writeFile('./contents/_index/events.json', next_event.talks, function (err) {
+
+	fs.writeFile('./contents/_index/events.json', JSON.stringify(next_event.talks), function (err) {
 		console.info('Done. Next event: ' + new Date(next_event.date).toDateString());
 		complete();
 	});
-	
+
 }, true);
 
 task('clear', [], function () {

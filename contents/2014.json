@@ -20,7 +20,7 @@
 				"language": "en",
 				"git": "",
 				"slides": "",
-				"video": "",
+				"video": "https://vimeo.com/87488883",
 				"description": "I'll show you how to generate a nodejs API consumer by using the API Blueprint (http://apiblueprint.org/) to generate code from a Postman (http://www.getpostman.com/) collection."
 			},
 			{
@@ -35,11 +35,7 @@
 				"git": "",
 				"slides": "",
 				"video": "",
-				"description": "Introduction to testing with AngularJS will be the talk for you if you've always been interested what testing is but never took the step to finally start doing it. The talk will be mainly focused on testing basics and unit testing in AngularJS",
-				"resources": {
-					"github": "",
-					"slides": ""
-				}
+				"description": "Introduction to testing with AngularJS will be the talk for you if you've always been interested what testing is but never took the step to finally start doing it. The talk will be mainly focused on testing basics and unit testing in AngularJS"
 			}
 		]
 	},
@@ -48,34 +44,48 @@
 		"talks": [
 			{
 				"title": "Backbone, Martionette and other puppets",
-				"presenter": {
-					"username": "ainformatico",
-					"displayname": "Alejandro El Informático"
+				"speaker": {
+					"twitter": "ainformatico",
+					"name": "Alejandro"
 				},
+				"level": "Intermediate",
+				"language": "en",
+				"git": "",
+				"slides": "",
+				"video": "",
 				"description": "Now that you know Backbone.js is time to become a puppeteer and use Martionette.js, a composite application library for Backbone.js that aims to simplify the construction of large scale Javascript applications."
 			},
 			{
-				"title": "Meet Ember.js
-				"presenter": {
-					"username": "miguelcamba",
-					"displayname": "Miguel Camba"
+				"title": "Meet Ember.js",
+				"speaker": {
+					"twitter": "miguelcamba",
+					"portrait": "https://pbs.twimg.com/profile_images/1283021990/foto_180.jpg",
+					"name": "Miguel Camba"
 				},
+				"level": "Beginner",
+				"language": "en",
+				"git": "",
+				"slides": "",
+				"video": "",
 				"description": "There's a new framework in town. Probably you've heard about it. It's time to know what's all the buzz about. A brief introduction to Ember as a framework and the phylosophy behind it."
 			}
 		]
-	},
-	{
-		"talks": []
 	},
 	{
 		"date": "2014-04-09T22:00:00.000Z",
 		"talks": [
 			{
 				"title": "AngularJS and the Declarative / Imperative Impedance Mismatch",
-				"presenter": {
-					"username": "jjenkov",
-					"displayname": "Jakob Jenkov"
+				"speaker": {
+					"twitter": "jjenkov",
+					"portrait": "https://pbs.twimg.com/profile_images/273450574/20081123-20081123-3E1W7902-small-portrait.jpg",
+					"name": "Jakob Jenkov"
 				},
+				"level": "Expert",
+				"language": "en",
+				"git": "",
+				"slides": "",
+				"video": "",
 				"description": "AngularJS uses its HTML directives at the core of its UI generation. That means that you specify how to generate the HTML using HTML. Part of that logic has been moved to the controller functions, but part of it cannot be moved. The result is imperative constructs like ng-if and ng-repeat inside the declarative HTML template. The mismatch between an imperative problem and a declarative tool ends up in a messy solution in the long run. JSP tried the same thing with custom tag libraries, and failed. XSL tried the same thing, and failed too. This talk will get into deeper detail about why I believe that the HTML directives - one of the core elements that AngularJS is praised for - is not such a great solution for UI generation."
 			}
 		]
